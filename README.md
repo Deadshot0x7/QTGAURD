@@ -1,104 +1,77 @@
 # QtGuard
-![QTGAURD](QTGUARD.jpg)
+![IMG](QTGUARD.jpg)
+##
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python)
+![Qt](https://img.shields.io/badge/Qt-Framework-41CD52?style=flat-square&logo=qt)
+![Windows](https://img.shields.io/badge/Windows-7%2B-0078D4?style=flat-square&logo=windows)
+![License](https://img.shields.io/badge/License-Educational-yellow?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 
-### GUI-Driven Command Execution Exploit (Windows)
+GUI-based command execution vulnerability research tool for Windows.
 
 ## Overview
 
-**QtGuard** is a Python + Qt–based offensive security tool designed to **demonstrate and exploit GUI-triggered command execution weaknesses** in Windows desktop applications. The project highlights how unsafe event handling and poor UI design choices can allow **user-assisted command execution abuse**, commonly leveraged through social-engineering vectors.
+QtGuard is a Python security research framework that demonstrates GUI-triggered command execution vulnerabilities in Windows desktop applications. Designed for authorized penetration testing and educational analysis of unsafe event handling patterns.
 
-QtGuard is built strictly for **authorized security testing, research, and educational purposes** in controlled environments.
+## Quick Start
 
----
+**Requirements:**
+- Python 3.8+
+- PyQt5/PyQt6
+- Windows 7 or later
 
-## Key Objectives
-
-* Demonstrate how **GUI interactions** can become an **initial execution vector**
-* Model **user-assisted command execution exploits** in Windows applications
-* Highlight security risks arising from **unsafe subprocess invocation**
-* Present clear **mitigation strategies and secure coding practices**
-
----
+**Authorization:** This tool requires explicit written permission before use on any system you do not own.
 
 ## Features
 
-* 🖥 **Windows-focused execution model**
-* 🧠 GUI-based exploit paths triggered through **image and audio interactions**
-* 🔍 **OS detection and execution flow control**
-* 🔐 **Restricted subprocess invocation** to ensure sandboxed behavior
-* 📝 **Secure event logging** for exploit visibility and analysis
-* 🛡 Emphasis on **ethical exploitation and defensive awareness**
+- Windows-focused execution modeling
+- Event-driven exploitation analysis
+- Subprocess execution vulnerability demonstration
+- Security event logging and visibility
+- Defensive mitigation strategies included
 
----
+## Technical Focus
 
-## Attack Scenario Modeled
+| Area | Details |
+|------|---------|
+| **Language** | Python 3.8+ |
+| **Framework** | Qt/PyQt |
+| **Platform** | Windows (7, 10, 11) |
+| **Vulnerability Class** | CWE-78: OS Command Injection |
 
-QtGuard demonstrates scenarios where:
+## Legal & Ethical Use
 
-* A user interacts with a seemingly benign GUI element
-* Unsafe event handling triggers command execution
-* Subprocess execution is abused due to poor validation
-* System impact is demonstrated in a **controlled sandbox environment**
+✅ **Authorized Use Only:**
+- Penetration testing (with written permission)
+- Isolated lab environments
+- Academic cybersecurity coursework
+- Authorized red team exercises
 
-This mirrors real-world **user execution** risks commonly observed in phishing-assisted attacks and insecure desktop applications.
+❌ **Prohibited:**
+- Unauthorized system access
+- Production environment attacks
+- Illegal activities
 
----
+See **Computer Fraud and Abuse Act (CFAA)** and applicable local laws.
 
-## Platform Support
+## Defensive Implementation
 
-* **Primary Platform:** Windows
-* Designed and tested for **Windows desktop environments**
-* Uses Qt for GUI abstraction and Python for execution logic
+- Input validation and sanitization
+- Secure subprocess handling (no `shell=True`)
+- Principle of least privilege
+- Application whitelisting
+- Comprehensive logging and monitoring
 
----
+## References
 
-## Tech Stack
-
-* **Language:** Python
-* **Framework:** Qt
-* **Platform:** Windows
-* **Focus Areas:**
-
-  * Command execution abuse
-  * GUI security design flaws
-  * User-assisted exploitation
-
----
-
-## Ethical Use Disclaimer
-
-⚠️ **Important**
-
-QtGuard is intended **only** for:
-
-* Authorized penetration testing
-* Security research
-* Educational demonstrations
-* Secure software design analysis
-
-Do **NOT** use this tool on systems you do not own or have explicit permission to test. The author is **not responsible** for misuse or illegal activity.
-
----
-
-## Mitigation & Defensive Focus
-
-Alongside exploitation, QtGuard emphasizes:
-
-* Secure event handling patterns
-* Safe subprocess execution practices
-* Input validation and privilege control
-* Logging and detection awareness for defensive teams
-
----
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [CWE-78: OS Command Injection](https://cwe.mitre.org/data/definitions/78.html)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 
 ## Author
 
-Developed by **Deadshot0x7**
-Focused on **ethical adversary simulation, exploit research, and secure application design**.
-
----
+**Deadshot0x7** - Security Research & Application Security
 
 ## License
 
-This project is released for **educational and research purposes only**.
-Refer to the repository license for detailed usage terms.
+Educational and authorized security research only. Users are responsible for legal compliance.
