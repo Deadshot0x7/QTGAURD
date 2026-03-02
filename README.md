@@ -1,77 +1,98 @@
 # QtGuard
-![IMG](QTGUARD.jpg)
-##
+![Img](QTGUARD.jpg)
+
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python)
 ![Qt](https://img.shields.io/badge/Qt-Framework-41CD52?style=flat-square&logo=qt)
 ![Windows](https://img.shields.io/badge/Windows-7%2B-0078D4?style=flat-square&logo=windows)
 ![License](https://img.shields.io/badge/License-Educational-yellow?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 
-GUI-based command execution vulnerability research tool for Windows.
+A comprehensive security research framework for analyzing GUI-based command execution vulnerabilities in Windows desktop applications.
+
+---
+
+## 📋 Quick Reference
+
+| Item | Details |
+|------|---------|
+| **Purpose** | Analyze and demonstrate GUI-triggered command execution vulnerabilities |
+| **Target Environment** | Windows desktop applications |
+| **Primary Use Case** | Authorized penetration testing and security research |
+| **Implementation Language** | Python 3.8+ |
+| **UI Framework** | Qt/PyQt |
+| **Vulnerability Classification** | CWE-78 (OS Command Injection) |
+| **Authorization Requirement** | ✓ Explicit written permission required |
+| **Estimated Setup Duration** | Approximately 10 minutes |
+| **Recommended Expertise Level** | Intermediate to Advanced |
+
+---
 
 ## Overview
 
-QtGuard is a Python security research framework that demonstrates GUI-triggered command execution vulnerabilities in Windows desktop applications. Designed for authorized penetration testing and educational analysis of unsafe event handling patterns.
+QtGuard is a Python-based security research framework designed to demonstrate and analyze GUI-triggered command execution vulnerabilities commonly found in Windows desktop applications. The tool facilitates authorized penetration testing and provides educational insights into unsafe event handling patterns and their security implications.
 
-## Quick Start
+## Getting Started
 
-**Requirements:**
-- Python 3.8+
-- PyQt5/PyQt6
-- Windows 7 or later
+**System Requirements:**
+- Python 3.8 or later
+- PyQt5 or PyQt6
+- Windows 7, 10, or 11
 
-**Authorization:** This tool requires explicit written permission before use on any system you do not own.
+**Critical Authorization Notice:** Prior to deployment on any system, explicit written authorization must be obtained from the system owner. Unauthorized access is prohibited by law.
 
-## Features
+## Core Capabilities
 
-- Windows-focused execution modeling
-- Event-driven exploitation analysis
-- Subprocess execution vulnerability demonstration
-- Security event logging and visibility
-- Defensive mitigation strategies included
+- Windows architecture-specific execution flow modeling
+- Event-driven vulnerability analysis and exploitation pathways
+- Subprocess execution mechanism vulnerability assessment
+- Comprehensive security event logging and audit trails
+- Integrated defensive mitigation techniques and remediation strategies
 
-## Technical Focus
+## Technical Specifications
 
-| Area | Details |
-|------|---------|
-| **Language** | Python 3.8+ |
-| **Framework** | Qt/PyQt |
-| **Platform** | Windows (7, 10, 11) |
-| **Vulnerability Class** | CWE-78: OS Command Injection |
+| Category | Specification |
+|----------|--------------|
+| **Primary Language** | Python 3.8+ |
+| **GUI Framework** | Qt/PyQt |
+| **Target Platforms** | Windows 7, 10, 11 |
+| **Vulnerability Category** | CWE-78: Improper Neutralization of Special Elements used in an OS Command |
 
-## Legal & Ethical Use
+## Authorized Use Policy
 
-✅ **Authorized Use Only:**
-- Penetration testing (with written permission)
-- Isolated lab environments
-- Academic cybersecurity coursework
-- Authorized red team exercises
+**✓ Permitted Use Cases:**
+- Authorized penetration testing engagements with documented client permission
+- Security research and analysis in isolated laboratory environments
+- Academic instruction in certified cybersecurity programs
+- Authorized red team exercises within organizational boundaries
 
-❌ **Prohibited:**
-- Unauthorized system access
-- Production environment attacks
-- Illegal activities
+**✗ Prohibited Use Cases:**
+- Unauthorized access to systems without explicit written permission
+- Malicious attacks against production environments
+- Violation of Computer Fraud and Abuse Act (CFAA) or applicable jurisdiction
+- Any illegal or unethical activity
 
-See **Computer Fraud and Abuse Act (CFAA)** and applicable local laws.
+**Legal Notice:** Users are responsible for ensuring compliance with the Computer Fraud and Abuse Act (CFAA), Data Protection Act, and applicable local and international cybersecurity laws.
 
-## Defensive Implementation
+## Security Mitigation Strategies
 
-- Input validation and sanitization
-- Secure subprocess handling (no `shell=True`)
-- Principle of least privilege
-- Application whitelisting
-- Comprehensive logging and monitoring
+- Rigorous input validation and sanitization protocols
+- Secure subprocess invocation (avoiding shell command interpretation)
+- Implementation of principle of least privilege
+- Application-based execution whitelisting
+- Comprehensive logging and real-time monitoring capabilities
 
-## References
+## References and Standards
 
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [CWE-78: OS Command Injection](https://cwe.mitre.org/data/definitions/78.html)
+- [OWASP Top 10 - 2021](https://owasp.org/www-project-top-ten/)
+- [CWE-78: Improper Neutralization of Special Elements used in an OS Command](https://cwe.mitre.org/data/definitions/78.html)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [NIST Special Publication 800-53: Security and Privacy Controls](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf)
 
-## Author
+## Project Information
 
-**Deadshot0x7** - Security Research & Application Security
+**Developer:** Deadshot0x7  
+**Specialization:** Application Security & Penetration Testing Research
 
-## License
+## License and Compliance
 
-Educational and authorized security research only. Users are responsible for legal compliance.
+This project is provided exclusively for educational purposes and authorized security research activities. All users are obligated to ensure full legal and regulatory compliance in their jurisdiction. The developer and contributors bear no responsibility for unauthorized or illegal use of this software.
